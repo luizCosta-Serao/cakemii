@@ -1,5 +1,7 @@
 body {
   background-image: url('../assets/bg-inicio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {

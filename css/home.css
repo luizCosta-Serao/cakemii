@@ -1,6 +1,7 @@
 .hero-home {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .hero-home h1 {
@@ -42,4 +43,46 @@
 
 .hero-home a:hover {
   opacity: .5;
+}
+
+@media (max-width:1050px) {
+  .hero-home h1 {
+    font-size: 72px;
+    max-width: 740px;
+    line-height: 72px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:800px) {
+  .hero-home h1 {
+    font-size: 56px;
+    line-height: 64px;
+    max-width: 550px;
+    margin-bottom: 20px;
+  }
+
+  .hero-home p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width:650px) {
+  .hero-home h1 {
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 550px;
+    margin-bottom: 20px;
+  }
+
+  .hero-home p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-home a {
+    font-size: 24px;
+    max-width: 180px;
+  }
 }

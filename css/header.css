@@ -7,6 +7,10 @@
   padding: 40px;
 }
 
+.header .btn-menu {
+  display: none;
+}
+
 .header nav ul {
   display: flex;
   align-items: center;
@@ -17,4 +21,43 @@
   color: #fafafa;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .header .btn-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .header .btn-menu img {
+    width: 50px;
+  }
+
+  .header nav {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    top: 120px;
+    background-color: #79220F;
+    z-index: 10000;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: .7s;
+    overflow: hidden;
+    height: 0;
+  }
+
+  .header nav.active {
+    visibility: visible;
+    opacity: 1;
+    height: 400px;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+  }
 }

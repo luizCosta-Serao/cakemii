@@ -3,6 +3,7 @@
     <img src="<?php echo INCLUDE_PATH; ?>assets/logo.svg" alt="CakeMii">
   </div>
 
+  <button class="btn-menu"><img src="<?php echo INCLUDE_PATH ?>assets/menu.svg" alt="Menu"></button>
   <nav>
     <ul>
       <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>

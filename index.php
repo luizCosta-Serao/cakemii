@@ -22,5 +22,7 @@
       include('pages/home.php');
     }
   ?>
+  <script src="<?php echo INCLUDE_PATH ?>js/jquery.min.js"></script>
+  <script type="module" src="<?php echo INCLUDE_PATH ?>js/script.js"></script>
 </body>
 </html>

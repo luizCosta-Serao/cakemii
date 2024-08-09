@@ -1,0 +1,45 @@
+.hero-home {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.hero-home h1 {
+  font-family: "Lobster", sans-serif;
+  color: #fff;
+  font-size: 96px;
+  line-height: 96px;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-home p {
+  color: #A8A8A8;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 863px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.hero-home a {
+  color: #fafafa;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background: linear-gradient(#9A3A25, #79220F);
+  border-radius: 20px;
+  transition: .4s;
+  display: block;
+  text-align: center;
+  max-width: 250px;
+}
+
+.hero-home a:hover {
+  opacity: .5;
+}

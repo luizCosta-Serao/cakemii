@@ -99,8 +99,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 .porque-nos-escolher {
   background-color: #fff;
   padding: 40px;
@@ -149,4 +147,86 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
->>>>>>> master
+
+.nossas-opcoes {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.nossas-opcoes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  min-width: 300px;
+}
+
+.nossas-opcoes ul li {
+  flex: 1;
+  min-width: 450px;
+  border-radius: 20px;
+}
+
+.nossas-opcoes ul li a {
+  position: relative;
+  height: 350px;
+  display: flex;
+  width:100% ;
+  align-items: end;
+  border-radius: 20px;
+}
+
+.nossas-opcoes ul li img {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.nossas-opcoes ul li p {
+  background-color: #79220F;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  font-family: "Lobster", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .nossas-opcoes ul li p {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nossas-opcoes ul {
+    min-width: none;
+  }
+
+  .nossas-opcoes ul li {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .nossas-opcoes ul li p {
+    font-size: 42px;
+  }
+}
+
+@media (max-width:500px) {
+  .nossas-opcoes ul {
+    min-width: 200px;
+    gap: 40px;
+  }
+
+  .nossas-opcoes ul li {
+    min-width: 200px;
+  }
+
+  .nossas-opcoes ul li p {
+    font-size: 32px;
+  }
+}

@@ -29,5 +29,34 @@
 </section>
 
 <section class="nossas-opcoes">
-  
+  <h2 class="title">Delicie-se com nossas opções:</h2>
+  <ul>
+    <li>
+      <a href="<?php echo INCLUDE_PATH ?>cardapio?categoria=bolos">
+        <img src="<?php echo INCLUDE_PATH ?>assets/bg-opcoes.png" alt="Bolos">
+        <p>Bolos</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="<?php echo INCLUDE_PATH ?>cardapio?categoria=doces-artesanais">
+        <img src="<?php echo INCLUDE_PATH ?>assets/bg-opcoes.png" alt="Doces Artesanais">
+        <p>Doces Artesanais</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="<?php echo INCLUDE_PATH ?>cardapio?categoria=tortas">
+        <img src="<?php echo INCLUDE_PATH ?>assets/bg-opcoes.png" alt="Tortas">
+        <p>Tortas</p>
+      </a>
+    </li>
+    
+    <li>
+      <a href="<?php echo INCLUDE_PATH ?>cardapio?categoria=doces-gourmet">
+        <img src="<?php echo INCLUDE_PATH ?>assets/bg-opcoes.png" alt="Doces Gourmet">
+        <p>Doces Gourmet</p>
+      </a>
+    </li>
+  </ul>
 </section>

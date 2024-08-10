@@ -1,6 +1,18 @@
+.bg-inicio {
+  background-image: url('../assets/bg-inicio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .hero-home {
   max-width: 1260px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
   padding: 40px;
 }
 
@@ -85,4 +97,53 @@
     font-size: 24px;
     max-width: 180px;
   }
+}
+
+.porque-nos-escolher {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.porque-nos-escolher ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.porque-nos-escolher ul li {
+  flex: 1;
+  background: linear-gradient(#FFE4DE, #FDC7BB);
+  padding: 40px;
+  height: 230px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.porque-nos-escolher ul li img {
+  margin: 0 auto 20px auto;
+  width: 60px;
+  display: block;
+}
+
+.porque-nos-escolher ul li h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2e2e2e;
+  font-family: "Open Sans", sans-serif;
+  max-width: 200px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+.porque-nos-escolher ul li p {
+  color: #A8A8A8;
+  font-size: 16px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }

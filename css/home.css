@@ -235,12 +235,14 @@
   background-image: url('../assets/bg-contato.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1260px;
+  gap: 40px;
   margin: 0 auto;
   padding: 40px;
 }
@@ -370,4 +372,27 @@
   right: 30px;
   top: 22px;
   display: inline-block;
+}
+
+@media (max-width: 1050px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .form-contato {
+    margin-top: 0;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 300px;
+  }
 }

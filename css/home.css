@@ -230,3 +230,144 @@
     font-size: 32px;
   }
 }
+
+.bg-contato {
+  background-image: url('../assets/bg-contato.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contato .container-contato h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.container-contato > p {
+  color: #BDBDBD;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 491px;
+  margin-bottom: 40px;
+}
+
+.container-contato ul {
+  padding: 0;
+}
+
+.container-contato ul li {
+  display: flex;
+  gap: 10px;
+}
+
+.container-contato ul li > img {
+  position: relative;
+  top: 5px;
+}
+
+.container-contato ul li p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.container-contato .redes-sociais {
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.container-contato .redes-sociais > div {
+  display: flex;
+  gap: 40px;
+}
+
+.container-contato .redes-sociais img {
+  width: 50px;
+  height: 50px;
+}
+
+.title-localidades {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.localidades li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.localidades li p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.form-contato label {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.form-contato input {
+  margin-bottom: 20px;
+  height: 68px;
+  border-radius: 20px;
+  border: none;
+}
+
+.form-contato textarea {
+  height: 200px;
+  resize: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.form-contato input[type="submit"] {
+  background-color: #FFE4DE;
+  border: none;
+  border-radius: 10px;
+  width: 183px;
+  text-align: left;
+  padding: 0 40px;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #191919;
+  cursor: pointer;
+}
+.form-contato > div {
+  width: 183px;
+  position: relative;
+}
+
+.form-contato > div::after {
+  content: '';
+  background-image: url('../assets/send.svg');
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  position: absolute;
+  height: 24px;
+  right: 30px;
+  top: 22px;
+  display: inline-block;
+}

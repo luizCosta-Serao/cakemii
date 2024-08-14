@@ -1,0 +1,148 @@
+.bg-inicio-cardapio {
+  background-image: url('../assets/bg-inicio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cardapio {
+  margin-top: 100px;
+  display: flex;
+  max-width: 1260px;
+  margin: 80px auto 80px auto;
+  padding: 40px;
+}
+
+.busca-cardapio {
+  margin-bottom: 40px;
+}
+
+.busca-cardapio label {
+  display: block;
+  color: #191919;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.busca-cardapio input {
+  border: 1px solid #6b6b6b;
+  border-radius: 10px;
+  width: 260px;
+  height: 40px;
+}
+
+.categorias-cardapio {
+  display: flex;
+  flex-direction: column;
+}
+
+.categorias-cardapio h2 {
+  color: #191919;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.categorias-cardapio a {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #191919;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b5b5b5;
+  margin-bottom: 10px;
+}
+
+.itens-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.itens-cardapio li a:hover {
+  opacity: .6;
+  transition: .4s;
+}
+
+.itens-cardapio li img {
+  width: 400px;
+  height: 400px;
+}
+
+.itens-cardapio li h2 {
+  background-color: #79220F;
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  max-width: 280px;
+  margin: 0 auto;
+  top: -40px;
+}
+
+.itens-cardapio li p {
+  color: #79220F;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+.paginacao {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.paginacao span {
+  color: #2e2e2e;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFE4DE;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginacao span.active {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #9A3A25;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+@media (max-width: 786px) {
+  .cardapio {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .procurar-cardapio {
+    margin: 0 auto;
+  }
+}

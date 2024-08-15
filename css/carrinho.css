@@ -1,0 +1,84 @@
+.carrinho {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1260px;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.carrinho ul li {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 0 0;
+  margin-bottom: 40px;
+}
+
+.carrinho ul li img {
+  width: 120px;
+  height: 120px;
+}
+
+.carrinho ul li h2 {
+  font-size: 32px;
+  color: #2e2e2e;
+  font-family: "Lobster", sans-serif;
+}
+
+.carrinho ul li .preco {
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+
+.carrinho ul li .quantidade {
+  background-color: #852B17;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.carrinho ul li a {
+  background-color: #ff0000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: .4s;
+}
+
+.carrinho ul li a:hover {
+  opacity: .4;
+}
+
+.carrinho .total {
+  color: #2e2e2e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.carrinho .finalizar {
+  display: block;
+  margin-left: 40px;
+  background-color: #852B17;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+}

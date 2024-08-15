@@ -1,0 +1,239 @@
+.single-produto {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+}
+
+.single-produto .single-produto-img {
+  border-radius: 20px;
+}
+
+.single-produto .single-produto-img img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+.single-produto .single-produto-content h1 {
+  font-family: "Lobster", sans-serif;
+  background-color: #79220F;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  width: 800px;
+  text-align: center;
+  left: 30%;
+  top: 20px;
+  font-size: 64px;
+}
+
+.single-produto .single-produto-content .preco {
+  margin-top: 170px;
+  font-family: "Open Sans", sans-serif;
+  color: #79220F;
+  font-size: 36px;
+  font-weight: 600;
+  display: block;
+}
+
+.single-produto .single-produto-content .descricao {
+  color: #6B6B6B;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  max-width: 550px;
+}
+
+.single-produto .single-produto-content h2 {
+  color: #424242;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.single-produto .single-produto-content .quantidade {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.single-produto .single-produto-content .quantidade span {
+  background-color: #BA523B;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 10px;
+  cursor: pointer;
+  width: 10px;
+  transition: .4s;
+}
+
+.single-produto .single-produto-content .quantidade span:hover {
+  opacity: .4;
+}
+
+.single-produto .single-produto-content .quantidade p {
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.single-produto .single-produto-content button {
+  background-color: #BA523B;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+  color: #fff;
+  border: none;
+  display: block;
+  margin-top: 40px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.single-produto .single-produto-content button:hover {
+  opacity: .4;
+}
+
+.produtos-relacionados {
+  max-width: 1260px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.produtos-relacionados ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Produtos Relacionados */
+
+
+.produtos-relacionados ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.produtos-relacionados li a:hover {
+  opacity: .6;
+  transition: .4s;
+}
+
+.produtos-relacionados li img {
+  width: 400px;
+  height: 400px;
+}
+
+.produtos-relacionados li h2 {
+  background-color: #79220F;
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  max-width: 280px;
+  margin: 0 auto;
+  top: -40px;
+}
+
+.produtos-relacionados li p {
+  color: #79220F;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+.comentarios {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 40px;
+} 
+
+.comentarios .single-comentario {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #79220F;
+  padding: 20px 0;
+}
+
+.comentarios .single-comentario div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.comentarios .single-comentario div span {
+  color: #949494;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.comentarios .single-comentario .comentario {
+  font-family: "Open Sans", sans-serif;
+  color: #424242;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.comentarios form h2 {
+  font-family: "Lobster", sans-serif;
+  color: #424242;
+  font-size: 32px;
+}
+
+.comentarios form textarea {
+  border: 1px solid #79220F;
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+  resize: none;
+  display: block;
+  padding: 10px;
+  outline: none;
+  font-size: 24px;
+  color: #424242;
+}
+
+.comentarios form input[type="submit"] {
+  background-color: #BA523B;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+  color: #fff;
+  border: none;
+  display: block;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.comentarios form input[type="submit"]:hover {
+  opacity: .4;
+}

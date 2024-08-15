@@ -12,3 +12,6 @@
 
 /* CARDÁPIO */
 @import url('./cardapio.css');
+
+/* SINGLE PRODUTO */
+@import url('./single-produto.css');

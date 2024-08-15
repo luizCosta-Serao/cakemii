@@ -57,7 +57,7 @@
   </div>
 
   <form action="" method="post">
-    <h2>Deixe um comentário</h2>
+    <h2 class="title">Deixe um comentário</h2>
     <textarea name="comentario" id="comentario"></textarea>
     <input type="submit" name="comentar" value="Comentar">
   </form>

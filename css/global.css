@@ -37,6 +37,18 @@ a {
   border-radius: 20px;
 }
 
+.nome-usuario {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.sair {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
 @media (max-width: 1000px) {
   .title {
     font-size: 52px;

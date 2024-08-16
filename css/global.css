@@ -15,6 +15,28 @@ a {
   margin-bottom: 80px;
 }
 
+.sucesso {
+  background-color: green;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.erro {
+  background-color: red;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 @media (max-width: 1000px) {
   .title {
     font-size: 52px;

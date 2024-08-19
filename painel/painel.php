@@ -22,6 +22,10 @@
   <section class="container">
     <aside class="sidebar">
         <a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Início</a>
+        <h2>Produtos</h2>
+        <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-produto">Cadastrar Produto</a>
+        <h2>Categorias</h2>
+        <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categoria">Cadastrar Categoria</a>
     </aside>
     <div class="content">
       <?php

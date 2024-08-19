@@ -9,6 +9,7 @@
 
   define('INCLUDE_PATH', 'http://localhost/cakemii/');
   define('BASE_DIR', __DIR__);
+  define('INCLUDE_PATH_PAINEL', INCLUDE_PATH.'painel/');
 
   define('HOST', 'localhost');
   define('USER', 'root');

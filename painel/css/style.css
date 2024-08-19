@@ -89,7 +89,7 @@ body {
 }
 
 .sidebar a {
-  padding: 40px 40px 10px 40px;
+  padding: 20px 40px 10px 40px;
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -97,8 +97,97 @@ body {
   border-bottom: 1px solid #fff;
 }
 
+.sidebar h2 {
+  padding-left: 40px;
+  color: #fff;
+}
+
 .content {
   position: relative;
   left: 300px;
   padding: 40px;
+}
+
+.title {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+form div label {
+  display: block;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+form div input {
+  display: block;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 25px;
+  border: 1px solid #bbb;
+  max-width: 500px;
+  width: 100%;
+}
+
+form div textarea {
+  display: block;
+  height: 150px;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 25px;
+  border: 1px solid #bbb;
+  max-width: 500px;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  background-color: #3377ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+form input[type="submit"]:hover {
+  opacity: .7;
+}
+
+.sucesso {
+  background-color: #00ff00;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.erro {
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
 }

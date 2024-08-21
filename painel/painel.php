@@ -24,6 +24,7 @@
         <a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Início</a>
         <h2>Produtos</h2>
         <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-produto">Cadastrar Produto</a>
+        <a href="<?php echo INCLUDE_PATH_PAINEL ?>listar-produtos">Listar Produtos</a>
         <h2>Categorias</h2>
         <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categoria">Cadastrar Categoria</a>
         <a href="<?php echo INCLUDE_PATH_PAINEL ?>listar-categorias">Listar Categorias</a>

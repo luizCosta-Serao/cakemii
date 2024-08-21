@@ -244,3 +244,8 @@ form input[type="submit"]:hover {
   font-weight: 600;
   display: inline-block;
 }
+
+.img-single-produto img {
+  width: 200px;
+  height: 200px;
+}

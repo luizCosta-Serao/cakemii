@@ -18,37 +18,20 @@
   </div>
 
   <ul class="itens-cardapio">
-    <li>
-      <a href="<?php echo INCLUDE_PATH; ?>single-produto">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
-
-    <li>
-      <a href="">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
-
-    <li>
-      <a href="">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
-
-    <li>
-      <a href="">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
+    <?php
+      $sql = MySql::connect()->prepare("SELECT * FROM `produtos`");
+      $sql->execute();
+      $produtos = $sql->fetchAll();
+      foreach ($produtos as $key => $value) {
+    ?>
+      <li>
+        <a href="<?php echo INCLUDE_PATH; ?>single-produto">
+          <img src="<?php echo INCLUDE_PATH; ?>uploads/<?php echo $value['imagem'] ?>" alt="<?php echo $value['nome'] ?>">
+          <h2><?php echo $value['nome'] ?></h2>
+          <p>R$ <?php echo $value['preco'] ?></p>
+        </a>
+      </li>
+    <?php } ?>
   </ul>
 </section>
 

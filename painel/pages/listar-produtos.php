@@ -31,7 +31,7 @@
         <p><b>Descrição do Produto:</b> <?php echo $value['descricao'] ?></p>
         <p><b>Categoria do Produto:</b> <?php echo $value['categoria'] ?></p>
         <a class="btn-excluir" href="<?php echo INCLUDE_PATH_PAINEL; ?>listar-produtos?delete=<?php echo $value['id'] ?>">Excluir</a>
-        <a class="btn-editar" href="">Editar</a>
+        <a class="btn-editar" href="<?php echo INCLUDE_PATH_PAINEL; ?>editar-produto?id=<?php echo $value['id'] ?>">Editar</a>
       </div>
       <div class="img-single-produto">
         <img src="<?php echo INCLUDE_PATH; ?>uploads/<?php echo $value['imagem'] ?>" alt="">

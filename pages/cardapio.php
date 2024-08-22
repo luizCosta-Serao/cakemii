@@ -29,7 +29,7 @@
       foreach ($produtos as $key => $value) {
     ?>
       <li>
-        <a href="<?php echo INCLUDE_PATH; ?>single-produto">
+        <a href="<?php echo INCLUDE_PATH; ?>single-produto?id=<?php echo $value['id'] ?>">
           <img src="<?php echo INCLUDE_PATH; ?>uploads/<?php echo $value['imagem'] ?>" alt="<?php echo $value['nome'] ?>">
           <h2><?php echo $value['nome'] ?></h2>
           <p>R$ <?php echo $value['preco'] ?></p>

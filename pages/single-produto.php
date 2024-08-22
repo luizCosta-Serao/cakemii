@@ -1,17 +1,23 @@
+<?php
+  $id_produto = $_GET['id'];
+  $sql = MySql::connect()->prepare("SELECT * FROM `produtos` WHERE id = ?");
+  $sql->execute(array($id_produto));
+  $produto = $sql->fetch();
+?>
 <div class="bg-inicio"></div>
 <section class="single-produto">
   <div class="single-produto-img">
     <img src="<?php echo INCLUDE_PATH ?>assets/produto-foto.png" alt="">
   </div>
   <div class="single-produto-content">
-    <h1>Bolo de Aniversário</h1>
-    <span class="preco">R$ 199.00</span>
-    <p class="descricao">Celebre seu dia especial com nosso irresistível Bolo de Aniversário Clássico de Chocolate! Camadas fofinhas de massa de chocolate, recheadas com um cremoso ganache de chocolate meio amargo, que derrete na boca a cada garfada.</p>
+    <h1><?php echo $produto['nome'] ?></h1>
+    <span class="preco">R$ <?php echo $produto['preco'] ?></span>
+    <p class="descricao"><?php echo $produto['descricao'] ?></p>
     <h2>Quantidade:</h2>
     <div class="quantidade">
-      <span>+</span>
+      <span class="add-quantidade">+</span>
       <p>1</p>
-      <span>-</span>
+      <span class="remove-quantidade">-</span>
     </div>
     <button>Adicionar ao Carrinho</button>
   </div>
@@ -20,21 +26,20 @@
 <section class="produtos-relacionados">
   <h2 class="title">Produtos Relacionados</h2>
   <ul>
-    <li>
-      <a href="<?php echo INCLUDE_PATH; ?>single-produto">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
-
-    <li>
-      <a href="<?php echo INCLUDE_PATH; ?>single-produto">
-        <img src="<?php echo INCLUDE_PATH; ?>assets/produto-foto.png" alt="Foto do produto">
-        <h2>Bolo de Aniversário</h2>
-        <p>R$ 199,00</p>
-      </a>
-    </li>
+    <?php
+      $sql = MySql::connect()->prepare('SELECT * FROM `produtos` WHERE categoria = ? AND id != ? LIMIT 3');
+      $sql->execute(array($produto['categoria'], $produto['id']));
+      $produtos_relacionados = $sql->fetchAll();
+      foreach ($produtos_relacionados as $key => $value) {
+    ?>
+      <li>
+        <a href="<?php echo INCLUDE_PATH; ?>single-produto?id=<?php echo $value['id'] ?>">
+          <img src="<?php echo INCLUDE_PATH; ?>uploads/<?php echo $value['imagem'] ?>" alt="Foto do produto">
+          <h2><?php echo $value['nome'] ?></h2>
+          <p>R$ <?php echo $value['preco'] ?></p>
+        </a>
+      </li>
+    <?php } ?>
   </ul>
 </section>
 

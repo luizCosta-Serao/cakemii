@@ -10,10 +10,14 @@
   
     <div class="categorias-cardapio">
       <h2>Categorias</h2>
-      <a href="">Bolos</a>
-      <a href="">Tortas</a>
-      <a href="">Doces Artesanais</a>
-      <a href="">Doces Gourmet</a>
+      <?php
+        $sql = MySql::connect()->prepare("SELECT * FROM `categorias`");
+        $sql->execute();
+        $categorias = $sql->fetchAll();
+        foreach ($categorias as $key => $value) {
+      ?>
+      <span><?php echo $value['nome_categoria'] ?></span>
+      <?php } ?>
     </div>
   </div>
 

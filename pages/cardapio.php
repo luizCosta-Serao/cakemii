@@ -3,7 +3,7 @@
 <section class="cardapio">
 
   <div class="procurar-cardapio">
-    <form method="post" class="busca-cardapio">
+    <form method="get" class="busca-cardapio">
       <label for="pesquisar">Pesquisar</label>
       <input type="text" name="pesquisar" id="pesquisar">
     </form>

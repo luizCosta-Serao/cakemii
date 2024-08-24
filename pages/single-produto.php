@@ -19,7 +19,7 @@
       <p>1</p>
       <span class="remove-quantidade">-</span>
     </div>
-    <button>Adicionar ao Carrinho</button>
+    <button id="add-carrinho">Adicionar ao Carrinho</button>
   </div>
 </section>
 

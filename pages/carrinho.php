@@ -1,3 +1,10 @@
+<?php
+  if (isset($_GET['delete'])) {
+    $id = $_GET['delete'];
+    $delete_produto = MySql::connect()->prepare("DELETE FROM `carrinho` WHERE id = ? AND usuario_id = ?");
+    $delete_produto->execute(array($id, $_SESSION['id']));
+  }
+?>
 <div class="bg-inicio"></div>
 
 <section class="carrinho">
@@ -17,7 +24,7 @@
         <h2><?php echo $value['nome'] ?></h2>
         <span class="preco">R$ <?php echo $value['preco'] ?></span>
         <span class="quantidade"><?php echo $value['quantidade'] ?></span>
-        <a href="">Deletar</a>
+        <a href="<?php echo INCLUDE_PATH; ?>carrinho?delete=<?php echo $value['id'] ?>">Deletar</a>
       </li>
     <?php } ?>
   </ul>

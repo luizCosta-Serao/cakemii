@@ -45,23 +45,21 @@
 
 <section class="comentarios">
   <h2 class="title">Comentários</h2>
-  <div class="single-comentario">
-    <div>
-      <img src="<?php echo INCLUDE_PATH ?>assets/foto-perfil.png" alt="">
-      <span class="nome-usuario">Luiz Antonio</span>
+  <?php
+    $sql = MySql::connect()->prepare("SELECT * FROM `comentarios` WHERE id_produto = ?");
+    $sql->execute(array($id_produto));
+    $comentarios = $sql->fetchAll();
+    foreach ($comentarios as $key => $value) {
+  ?>
+    <div class="single-comentario">
+      <div>
+        <span class="nome-usuario"><?php echo $value['nome'] ?></span>
+      </div>
+      <p class="comentario"><?php echo $value['comentario'] ?></p>
     </div>
-    <p class="comentario">Bolo muito gostoso! Comprarei mais vezes</p>
-  </div>
+  <?php } ?>
 
-  <div class="single-comentario">
-    <div>
-      <img src="<?php echo INCLUDE_PATH ?>assets/foto-perfil.png" alt="">
-      <span class="nome-usuario">Luiz Antonio</span>
-    </div>
-    <p class="comentario">Bolo muito gostoso! Comprarei mais vezes</p>
-  </div>
-
-  <form action="" method="post">
+  <form action="<?php echo INCLUDE_PATH; ?>ajax/comentar.php" method="post">
     <h2 class="title">Deixe um comentário</h2>
     <textarea name="comentario" id="comentario"></textarea>
     <input type="submit" name="comentar" value="Comentar">
